@@ -19,9 +19,11 @@ function Portfolio(props) {
                 <Project 
                     key={i} 
                     title={project.title} 
+                    type={project.type}
                     img_src={project.img_src} 
                     github={project.github}
                     app={project.app}
+                    description={project.description}
                     border="1px" />)
                 } )
             }

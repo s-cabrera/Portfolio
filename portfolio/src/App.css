@@ -1,3 +1,22 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.project-container{
+    position: relative;
+}
+
+.project-title{
+    position: absolute;
+    bottom: 15%;
+    opacity: 0.75;
+    max-width: 60%;
+    text-align: center;
+}
+
+.project-badge{
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    opacity: 1.0;
+}

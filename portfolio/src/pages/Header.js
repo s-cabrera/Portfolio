@@ -52,8 +52,8 @@ export default function Header({handlePageChange}) {
                 handlePageChange={handlePageChange} 
             />
             <NavLink 
-                href="#portfolio" 
-                text="Portfolio" 
+                href="#projects" 
+                text="Projects" 
                 handlePageChange={handlePageChange} 
             />
             <NavLink 
