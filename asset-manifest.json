@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4fded332.chunk.css",
-    "main.js": "/Portfolio/static/js/main.5526607f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.5526607f.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.b937b462.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b937b462.js.map",
-    "static/js/2.6b7fa412.chunk.js": "/Portfolio/static/js/2.6b7fa412.chunk.js",
-    "static/js/2.6b7fa412.chunk.js.map": "/Portfolio/static/js/2.6b7fa412.chunk.js.map",
-    "static/js/3.7e7e45f3.chunk.js": "/Portfolio/static/js/3.7e7e45f3.chunk.js",
-    "static/js/3.7e7e45f3.chunk.js.map": "/Portfolio/static/js/3.7e7e45f3.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.280e1dae.chunk.css",
+    "main.js": "/Portfolio/static/js/main.38060b75.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.38060b75.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.ba61eff0.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ba61eff0.js.map",
+    "static/js/2.ccbc6425.chunk.js": "/Portfolio/static/js/2.ccbc6425.chunk.js",
+    "static/js/2.ccbc6425.chunk.js.map": "/Portfolio/static/js/2.ccbc6425.chunk.js.map",
+    "static/js/3.ab39bb3d.chunk.js": "/Portfolio/static/js/3.ab39bb3d.chunk.js",
+    "static/js/3.ab39bb3d.chunk.js.map": "/Portfolio/static/js/3.ab39bb3d.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.4fded332.chunk.css.map": "/Portfolio/static/css/main.4fded332.chunk.css.map",
-    "static/js/2.6b7fa412.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6b7fa412.chunk.js.LICENSE.txt",
+    "static/css/main.280e1dae.chunk.css.map": "/Portfolio/static/css/main.280e1dae.chunk.css.map",
+    "static/js/2.ccbc6425.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ccbc6425.chunk.js.LICENSE.txt",
     "static/media/Anime-Q-Demo.72662c8c.gif": "/Portfolio/static/media/Anime-Q-Demo.72662c8c.gif",
     "static/media/Fitness_Tracker_Demo.5cbb71c6.gif": "/Portfolio/static/media/Fitness_Tracker_Demo.5cbb71c6.gif",
     "static/media/Tech_Blog_Demo.5b10176e.gif": "/Portfolio/static/media/Tech_Blog_Demo.5b10176e.gif",
@@ -22,9 +22,9 @@
     "static/media/weather_dashboard_demo.038b8fec.gif": "/Portfolio/static/media/weather_dashboard_demo.038b8fec.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.b937b462.js",
-    "static/js/2.6b7fa412.chunk.js",
-    "static/css/main.4fded332.chunk.css",
-    "static/js/main.5526607f.chunk.js"
+    "static/js/runtime-main.ba61eff0.js",
+    "static/js/2.ccbc6425.chunk.js",
+    "static/css/main.280e1dae.chunk.css",
+    "static/js/main.38060b75.chunk.js"
   ]
 }
