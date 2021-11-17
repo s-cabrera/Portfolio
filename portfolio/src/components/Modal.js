@@ -1,4 +1,5 @@
-//React Components
+//React and Components
+import React from "react";
 import CollapseCard from "./Collapse";
 
 //Chakra UI
@@ -17,7 +18,6 @@ import {
     ModalHeader,
     ModalCloseButton,
     ModalBody,
-    ModalFooter,
 
 } from "@chakra-ui/react"
 
@@ -26,9 +26,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github, app }) => {
+    const initialRef = React.useRef()
+    const finalRef = React.useRef()
 
     return (
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal initialFocusRef={initialRef}
+        finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
             <ModalContent>
                 <ModalHeader>

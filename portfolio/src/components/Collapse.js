@@ -2,19 +2,19 @@
 
 //Chakra UI
 import { 
-    useDisclosure,
-    Collapse,
+    // useDisclosure,
+    // Collapse,
     Box,
-    Button,
+    // Button,
 } from "@chakra-ui/react";
 
 const CollapseCard = ({description}) => {
 
-    const { isOpen, onToggle } = useDisclosure()
+    // const { isOpen, onToggle } = useDisclosure()
 
     return (
         <>
-        <Collapse in={isOpen} startingHeight={33}  animateOpacity>
+        {/* <Collapse in={isOpen} startingHeight={33}  animateOpacity> */}
           <Box
             mt="1"
             fontWeight="semibold"
@@ -23,8 +23,8 @@ const CollapseCard = ({description}) => {
           >
             {description}
           </Box>
-        </Collapse>
-        <Button onClick={onToggle}>Show More</Button>
+        {/* </Collapse> */}
+        {/* <Button onClick={onToggle}>Show More</Button> */}
         </>
     )
 }

@@ -9,7 +9,6 @@ import {
   Avatar,
   Link,
   Button,
-  // useDisclosure,
   useColorModeValue,
   useColorMode,
 } from '@chakra-ui/react';
@@ -37,20 +36,29 @@ export default function Header({handlePageChange}) {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.200', 'gray.700')} px={4}>
+      <Box bg={useColorModeValue('gray.200', 'gray.700')} px={4} height="maxHeight">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Flex direction="row" alignItems="center">
+          <Flex 
+            direction={{
+              base:"column", 
+              sm:"row"
+            }} 
+            alignItems={{
+              base:"start", 
+              sm:"center"
+            }}
+          >
             <Avatar src={avatar} me={2}/>
             <NavLink 
                 href="#about-me" 
                 text="Home" 
                 handlePageChange={handlePageChange} 
             />
-            <NavLink 
+            {/* <NavLink 
                 href="#about-me" 
                 text="About Me" 
                 handlePageChange={handlePageChange} 
-            />
+            /> */}
             <NavLink 
                 href="#projects" 
                 text="Projects" 

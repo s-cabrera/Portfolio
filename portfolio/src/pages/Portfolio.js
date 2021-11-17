@@ -8,12 +8,24 @@ import Project from "../components/Project";
 //Chakra UI
 import { 
     Grid, 
-    // Center 
+    Flex 
 } from "@chakra-ui/react"
 
 function Portfolio(props) {
     return (
-        <Grid templateColumns="repeat(3, 1fr)" gap={3} p={5}>
+        <Flex justifyContent={"center"} py={5}>
+        <Grid 
+            templateColumns={{
+                base:"repeat(1, 1fr)", 
+                md:"repeat(2, 1fr)", 
+                lg:"repeat(3, 1fr)"
+            }} 
+            gap={{
+                base:2,
+                md:3,
+                lg:5
+            }}
+        >
             { projects.map((project, i) => {
                 return(
                 <Project 
@@ -24,10 +36,11 @@ function Portfolio(props) {
                     github={project.github}
                     app={project.app}
                     description={project.description}
-                    border="1px" />)
+                />)
                 } )
             }
         </Grid>
+        </Flex>
     );
 }
 

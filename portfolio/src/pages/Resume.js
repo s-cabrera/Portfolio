@@ -25,7 +25,7 @@ function Resume(props) {
                 <li>APIs</li>
                 <li>Express</li>
                 <li>MySQL, Sequelize</li>
-                <li>MongoDD, Mongoose</li>
+                <li>MongoDB, Mongoose</li>
                 <li>REST</li>
                 <li>GraphQL</li>
             </ul>

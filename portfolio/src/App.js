@@ -6,6 +6,7 @@ import './App.css'
 
 //React Components
 import PortfolioContainer from './pages/PortfolioContainer'
+import Footer from "./pages/Footer";
 
 //Chakra UI Components
 import {
@@ -17,8 +18,9 @@ import {
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} minHeight="vh100">
       <PortfolioContainer/>
+      <Footer />
     </ChakraProvider>
   );
 }

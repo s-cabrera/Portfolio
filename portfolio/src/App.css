@@ -6,12 +6,19 @@
     position: relative;
 }
 
-.project-title{
+.project-title-display{
     position: absolute;
     bottom: 15%;
-    opacity: 0.75;
     max-width: 60%;
-    text-align: center;
+}
+
+.project-title{
+    width: fit-content;
+    opacity: 0.75;
+}
+
+.project-title:hover{
+    cursor: pointer;
 }
 
 .project-badge{

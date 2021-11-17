@@ -20,6 +20,8 @@ function Footer(props) {
         <Box
             as="footer"
             bg={useColorModeValue('gray.200', 'gray.700')}
+            sx={{ position: 'sticky', bottom: '0', }}
+            // border="1px"
         >
             <Center>
                 <HStack py={3} spacing="3">

@@ -1,56 +1,59 @@
 //React
 import React from "react";
-import ModalCard from './Modal'
 
-//Transitions functions
-// import { showTitle } from "../utils/transitions";
+//Components
+import ProjectTitle from "./ProjectTitle";
+
+// //Transitions functions
+// import { showTitle, hideTitle } from "../utils/transitions";
 
 //Chakra UI
 import {
   Box,
   Image,
   // Badge,
-  Heading,
+  // Heading,
   // Link,
   // Text,
   // Collapse,
   // Button,
-  useDisclosure
+  useDisclosure,
+  SlideFade
 } from "@chakra-ui/react"
+
 
 
 const Project = ({ title, img_src, github, app, type, description }) => {
 
-  //Modal Hooks
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  //Title Transition Hook
+  const { isOpen, onToggle } = useDisclosure()
 
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Box className="project-container">
-        <Image src={img_src} alt={title} />
-        <Heading 
-          size="lg" 
-          bg="gray.700" 
-          color="white" 
-          className="project-title" 
-          ps={1}
-          onClick={onOpen}
+      <Box 
+        className="project-container" 
+        boxShadow="dark-lg"
+        onMouseOver={() => {if(!isOpen){onToggle()}}}
+        onMouseOut={() => {if(isOpen){onToggle()}}}          
         >
-          {title}
-        </Heading>
-      </Box>
-      <ModalCard 
-        onClose={onClose} 
-        isOpen={isOpen} 
-        title={title}
-        img_src={img_src}
-        type={type} 
-        description={description} 
-        github={github} 
-        app={app}
-        />
+        <Image src={img_src} alt={title} />
+        <SlideFade 
+          in={isOpen} 
+          className="project-title-display"
+        >
+          <ProjectTitle    
+            title={title}
+            img_src={img_src}
+            type={type} 
+            description={description} 
+            github={github}
+            app={app}
+          />
+        </SlideFade>
+    </Box>
     </Box>
   )
 }
+
 
 export default Project

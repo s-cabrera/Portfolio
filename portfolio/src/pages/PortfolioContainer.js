@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from "./Header";
-import Footer from "./Footer";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
@@ -32,7 +31,6 @@ export default function PortfolioContainer() {
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      <Footer />
     </div>
   );
 }
