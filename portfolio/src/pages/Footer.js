@@ -20,7 +20,8 @@ function Footer(props) {
         <Box
             as="footer"
             bg={useColorModeValue('gray.200', 'gray.700')}
-            sx={{ position: 'sticky', bottom: '0', }}
+            // sx={{ position: 'sticky', bottom: '0', }}
+            h="full"
             // border="1px"
         >
             <Center>

@@ -1,9 +1,10 @@
+/*
 // import React, { useState }  from "react";
 
 // Here we import a helper function that will check if the email is valid
 // import { validateEmail } from '../utils/helpers';
 
-function Contact() {
+// function Contact() {
     // const [email, setEmail] = useState('');
     // const [message, setMessage] = useState('');
     // const [name, setName] = useState('');
@@ -59,9 +60,9 @@ function Contact() {
     //         setErrorMessage('');
     //   };
 
-    return (
-        <div>
-        {/* <form className="row justify-content-start text-start ms-2 col-10 col-lg-8 col-md-10 col-sm-10 py-3">
+    // return (
+    //     <div>
+         <form className="row justify-content-start text-start ms-2 col-10 col-lg-8 col-md-10 col-sm-10 py-3">
             <h3 className="">Contact</h3>
             <div className="">
                 <div className="mb-3">
@@ -105,9 +106,10 @@ function Contact() {
             <div className="ms-2">
               <p className="ps-2 error-text">{errorMessage}</p>
             </div>
-          )} */}
-        </div>
-    );
-}
+          )} 
+        // </div>
+    // );
+// }
 
-export default Contact;
+// export default Contact;
+*/

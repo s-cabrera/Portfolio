@@ -13,19 +13,29 @@ import {
 
 function AboutMe(props) {
     return (
-        <Flex direction="row" alignItems="center" p={8}>
+        <Flex 
+            direction={{
+                base:"column", 
+                md:"row" 
+            }} 
+            alignItems={"center"} 
+            p={8} 
+        >
             <Image
                 m={3}
                 // p={2}
                 // backgroundColor="blue.200"
                 // border="1px"
-                boxSize="25%"
+                boxSize={{
+                    base:"75%",
+                    md:"25%"
+                }}
                 objectFit="cover" 
                 src={developer_photo} 
                 alt="Developer_Photo"
                 
             />
-            <Stack direction="column" p={2} >
+            <Stack direction="column" p={2} h="full" >
                 <Text
                     fontSize="3xl"
                     fontWeight="semibold"
