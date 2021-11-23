@@ -17,8 +17,9 @@
     opacity: 0.75;
 }
 
-.project-title:hover{
+.project-title, .onHover :hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .project-badge{

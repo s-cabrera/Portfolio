@@ -1,13 +1,9 @@
 import React from "react";
 import developer_photo from "../images/hiking_selfie_2.jpg";
 import {
-    // Container,
     Stack,
-    // VStack,
-    // Box,
     Flex,
     Text,
-    // Heading,
     Image,
 } from "@chakra-ui/react"
 
