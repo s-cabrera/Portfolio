@@ -25,7 +25,7 @@ const ProjectTitle = ({title, img_src, type, description, github, app}) => {
             bg="gray.700"
             color="white"
             className="project-title"
-            ps={1}
+            p={1}
             onClick={onOpen}
         >
             {title}

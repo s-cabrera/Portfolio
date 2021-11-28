@@ -25,6 +25,7 @@ function Portfolio(props) {
                 md:3,
                 lg:5
             }}
+            mx={4}
         >
             { projects.map((project, i) => {
                 return(

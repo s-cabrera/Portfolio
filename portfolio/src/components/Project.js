@@ -11,16 +11,14 @@ import ProjectTitle from "./ProjectTitle";
 import {
   Box,
   Image,
-  // Badge,
-  // Heading,
-  // Link,
-  // Text,
-  // Collapse,
-  // Button,
   useDisclosure,
-  SlideFade
+  SlideFade,
+  useColorModeValue
 } from "@chakra-ui/react"
 
+
+//React-device-detect for project titles
+import { isMobile } from "react-device-detect";
 
 
 const Project = ({ title, img_src, github, app, type, description }) => {
@@ -29,14 +27,21 @@ const Project = ({ title, img_src, github, app, type, description }) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
+    <Box 
+      bg={useColorModeValue("gray.200", "gray.700")}
+      borderWidth="1px" 
+      borderRadius="lg" 
+      overflow="hidden"
+      boxShadow="dark-lg"
+      p={2}
+    >
       <Box 
-        className="project-container" 
-        boxShadow="dark-lg"
-        onMouseOver={() => {if(!isOpen){onToggle()}}}
-        onMouseOut={() => {if(isOpen){onToggle()}}}          
+        className="project-container"   
+        onMouseOver={() => {if(!isOpen && !isMobile){onToggle()}}}
+        onMouseOut={() => {if(isOpen && !isMobile){onToggle()}}}       
         >
-        <Image src={img_src} alt={title} />
+        {/* {(isMobile)? <div>Mobile</div> : <div>Desktop</div> } */}
+        <Image src={img_src} alt={title} w={'100%'}/>
         <SlideFade 
           in={isOpen} 
           className="project-title-display"

@@ -4,11 +4,12 @@ import React from "react";
 //Chakra UI
 import {
     Text,
-    Image,
+    Img,
     Box,
     Flex,
     Link,
     List,
+    UnorderedList,
     ListItem,
     ListIcon,
     Icon,
@@ -20,61 +21,92 @@ import {
 
 //Icons
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons'
-import { FaLinkedin, FaGithub, FaUserGraduate, FaBriefcase} from 'react-icons/fa'
+import {
+    FaLinkedin,
+    FaGithub,
+    FaUserGraduate,
+    FaBriefcase,
+    FaClipboardList
+    // FaRegKeyboard 
+} from 'react-icons/fa'
 
 //Images
 import developer_photo from "../images/hiking_selfie_2.jpg";
 
-
-
 function Resume(props) {
     return (
         <Flex
-            direction={{
-                base: 'column',
-                md: 'row'
-            }}
-            justify={{
-                base: 'center',
-                md: 'start'
-            }}
-            align={{
-                base: "center",
-                md: "start"
-            }}
-            flexWrap="wrap"
             m={2}
+            align="stretch"
+            wrap="wrap"
         >
             <Flex
-                bg={useColorModeValue("blue.200", "blue.800")}
+                bg={useColorModeValue("blue.100", "blue.800")}
                 w={{
-                    base: '80%',
-                    md: '30%'
+                    base: '100%',
+                    md: '40%',
+                    lg: '30%'
                 }}
-                h={"fit-content"}
                 p={2}
-                direction="column"
-                align="center"
-            // m={2}
+                flexWrap={"wrap"}
+                justify="center"
+                // align="start"
+
             >
                 <Text
-                    fontSize="4xl"
-                    ps={2}
+                    fontSize={{
+                        base: "4xl",
+                        // sm: "2x1",
+                        md: "3xl",
+                        lg: "4xl"
+                    }}
+                    w={{
+                        base: '100%'
+                    }}
+                    textAlign="center"
+                    mb={{
+                        base: 1,
+                    }}
                 >
                     Stephanie Cabrera
                 </Text>
-                <Image
+                <Img
+                    bg={useColorModeValue("blue.50", "blue.900")}
                     src={developer_photo}
-                    boxSize="75%"
-                    objectFit="cover"
+                    w={{
+                        base: '95%',
+                        sm: '70%',
+                        md: '80%',
+                        lg: '92%'
+                    }}
                     alt="Developer_Photo"
                     p={2}
-                    m={2}
-                    bg={useColorModeValue("blue.100", "blue.900")}
+                    // h={"fit"}
+                // m={2}
+                // border="1px solid aqua"
                 />
                 <List
-                    bg={useColorModeValue("blue.300", "blue.900")}
+                    bg={useColorModeValue("blue.50", "blue.900")}
                     p={5}
+                    m={2}
+                    w={{
+                        base: "95%",
+                        sm: "70%",
+                        md: "90%",
+                        lg: "92%"
+                    }}
+                    text-wrap="none"
+                    // border="1px"
+                    fontSize={{
+                        base: 'xs',
+                        sm: 'md',
+                        md: 'xs',
+                        lg: 'md'
+                    }}
+                    alignSelf={{
+                        base: 'none',
+                        sm: 'center'
+                    }}
                 >
                     <ListItem
                         className="onHover"
@@ -84,11 +116,9 @@ function Resume(props) {
                     </ListItem>
                     <ListItem
                         className="onHover"
-                        onClick={() => { navigator.clipboard.writeText("stephanie.cabrera.333@gmail.com") }}>
-                        <Text>
-                            <ListIcon as={EmailIcon} />
-                            stephanie.cabrera.333@gmail.com
-                        </Text>
+                        onClick={() => { navigator.clipboard.writeText("stephanie.cabrera.333@gmail.com") }}
+                    >
+                        <Text><ListIcon as={EmailIcon} />stephanie.cabrera.333@gmail.com</Text>
                     </ListItem>
                     <ListItem>
 
@@ -103,87 +133,141 @@ function Resume(props) {
                             s-cabrera
                         </Link>
                     </ListItem>
+                    <ListItem>
+                        <Link href="https://docs.google.com/document/d/1NJH6z2xB7R2hKH3Lv2bGI11YP1hH4gKq3eATM1iFm5I/edit"
+                            color="blue.500" rel="noreferrer" target="_blank">
+                            PDF version
+                        </Link>
+                    </ListItem>
                 </List>
             </Flex>
             <Flex
+                direction="column"
                 bg={useColorModeValue("gray.200", "gray.700")}
-                boxSize={{
+                w={{
                     base: "100%",
-                    md: "40%"
+                    md: '35%',
+                    lg: "45%"
                 }}
                 ps={2}
-                ms={2}
+                ms={{ base: 0, md: 2 }}
+                mt={{ base: 2, md: 0 }}
                 flexGrow={1}
-                justify="center"
-                direction="column"
                 textAlign="start"
+                
             >
                 <Text fontSize="3xl">
-                    <Icon 
-                        as={FaBriefcase} 
+                    <Icon
+                        as={FaBriefcase}
                         border="1px"
                         borderRadius={"5px"}
                         p={1}
                         me={2}
                         mb={1}
-                    /> 
+                    />
                     Experience
                 </Text>
                 <Text fontSize="3xl">
-                <Icon 
-                        as={FaUserGraduate} 
+                    <Icon
+                        as={FaUserGraduate}
                         border="1px"
                         borderRadius={"5px"}
                         p={1}
                         me={2}
                         mb={1}
-                    /> 
+                    />
                     Education
                 </Text>
 
-                <Image
-                    src={"https://lh3.googleusercontent.com/proxy/ddE7spCJFELFv24PON8xr9z-tTQ06A2wrMSRbar46PCbLF-0ZDHQRG4QYbHfxO--ZReUvzhltbE14lxOm9QCJMlYDEoB2pU"}
-                    boxSize="50%"
+                <Img
+                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UC_Riverside_logo.svg/1024px-UC_Riverside_logo.svg.png"}
+                    boxSize="45%"
                     mb={3}
                     alignSelf="center"
+                    alt={"University of California, Riverside Logo"}
+                // border="1px"
                 />
                 <Box
-                    bg={useColorModeValue("blue.200", "blue.700")}
+                    bg={useColorModeValue("blue.100", "blue.700")}
                     p={2}
                     m={2}
                     borderRadius="5px"
                 >
-                    <Text 
-                        fontSize="xl" 
+                    <Text
+                        fontSize="xl"
                         borderBottom="1px"
                         pb={1}
                     >
                         Full Stack Development Certificate (2021)
                     </Text>
-
-                    <Text>Technologies Learned</Text>
+                    <UnorderedList>
+                        <ListItem>
+                            Frontend: HTML, CSS, JavaScript, Handlebars, Bootstrap, React.js
+                        </ListItem>
+                        <ListItem>
+                            Backend:
+                        </ListItem>
+                    </UnorderedList>
 
                 </Box>
                 <Box
-                    bg={useColorModeValue("blue.200", "blue.700")}
+                    bg={useColorModeValue("blue.100", "blue.700")}
                     p={2}
                     m={2}
                     borderRadius="5px"
                 >
-                    <Text 
-                        fontSize="xl" 
+                    <Text
+                        fontSize="xl"
                         borderBottom="1px"
-                        pb={1} 
+                        pb={1}
                     >
                         Bachelor of Science in Computer Engineering (2020)
                     </Text>
-                    <Text></Text>
+                    <Text>The best years of my life</Text>
                 </Box>
+                <UnorderedList
+                    listStyleType="none"
+                >
+                    <Text fontSize="3xl">
+                        <Icon
+                            as={FaClipboardList}
+                            border="1px"
+                            borderRadius={"5px"}
+                            p={1}
+                            me={2}
+                            mb={1}
+                        />
+                        Skills
+                    </Text>
 
+                    <ListItem
+                        bg={useColorModeValue("blue.100", "blue.700")}
+                        borderRadius="5px"
+                        p={2}
+                        my={2}
+                    >
+                        <Text fontWeight="bold">Languages </Text>Bash, C++, HTML, CSS, JavaScript, MySQL, Sequelize, Mongoose, GraphQL
+                    </ListItem>
 
+                    <ListItem
+                        bg={useColorModeValue("blue.100", "blue.700")}
+                        borderRadius="5px"
+                        p={2}
+                        mb={2}
+                    >
+                        <Text fontWeight="bold">Technologies </Text>Git, React.js, Node.js, Heroku, MongoDB Atlas, Bootstrap, Chakra UI
+                    </ListItem>
 
+                    <ListItem
+                        bg={useColorModeValue("blue.100", "blue.700")}
+                        borderRadius="5px"
+                        p={2}
+                        mb={2}
+                    ><Text fontWeight="bold">Etc </Text>AGILE, Project Management, Test Driven Development, Responsive Design
+                    </ListItem>
+
+                </UnorderedList>
             </Flex>
-
         </Flex>
 
     );
@@ -218,11 +302,17 @@ export default Resume;
     <ListItem h="full">GraphQL</ListItem>
 </UnorderedList>
 </Box>*/
-/* 
+/*
 <Image
 src="https://ucrmesa.weebly.com/uploads/1/3/2/0/132087666/bourns-college-of-engineering-rgb-horz_orig.png"
 boxSize="50%"
 mb={3}
 // border="1px"
 // borderColor={useColorModeValue("gray.100", "gray.600")}
-/> */
+/>
+
+Utilizing HTML, CSS, JavaScript, Handlebars, and web APIs (Bootstrap) to build interactive and responsive client-side applications.
+Fetching information from Third-Party APIs to use in client-side applications.
+Building databases with MySQL, Sequelize, and Node.js, implementing user validation and authentication, and practicing Test-Driven Development.
+
+*/

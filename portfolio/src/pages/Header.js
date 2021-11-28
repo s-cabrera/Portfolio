@@ -22,7 +22,7 @@ const NavLink = (props) => (
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      bg: useColorModeValue('gray.300', 'gray.600'),
     }}
     href={props.href}
     onClick={()=> props.handlePageChange(props.text) }

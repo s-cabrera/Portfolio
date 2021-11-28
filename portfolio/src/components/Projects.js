@@ -27,7 +27,7 @@ export const projects = [
         img_src: anime_q,
         github: "https://github.com/s-cabrera/Anime-Q",
         app: "https://anime-q-list.herokuapp.com",
-        description: "Create your anime watchlist with Anime-Q",
+        description: "Anime-Q is a full stack application that. Create your anime watchlist with Anime-Q",
         tech: ["HTML","CSS", "JavaScript", "MySQL",] 
     },
     {
