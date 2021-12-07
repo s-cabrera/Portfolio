@@ -19,9 +19,6 @@ function AboutMe(props) {
         >
             <Image
                 m={3}
-                // p={2}
-                // backgroundColor="blue.200"
-                // border="1px"
                 boxSize={{
                     base:"75%",
                     md:"25%"

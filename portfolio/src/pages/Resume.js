@@ -13,6 +13,7 @@ import {
     ListItem,
     ListIcon,
     Icon,
+    Spacer
 } from "@chakra-ui/react"
 
 import {
@@ -26,7 +27,8 @@ import {
     FaGithub,
     FaUserGraduate,
     FaBriefcase,
-    FaClipboardList
+    FaClipboardList,
+    FaBook
     // FaRegKeyboard 
 } from 'react-icons/fa'
 
@@ -50,7 +52,7 @@ function Resume(props) {
                 p={2}
                 flexWrap={"wrap"}
                 justify="center"
-                // align="start"
+                alignContent="start"
 
             >
                 <Text
@@ -81,7 +83,7 @@ function Resume(props) {
                     }}
                     alt="Developer_Photo"
                     p={2}
-                    // h={"fit"}
+                // h={"fit"}
                 // m={2}
                 // border="1px solid aqua"
                 />
@@ -150,96 +152,55 @@ function Resume(props) {
                     lg: "45%"
                 }}
                 ps={2}
+                py={4}
                 ms={{ base: 0, md: 2 }}
                 mt={{ base: 2, md: 0 }}
                 flexGrow={1}
                 textAlign="start"
-                
+
             >
                 <Text fontSize="3xl">
                     <Icon
-                        as={FaBriefcase}
+                        as={FaBook}
                         border="1px"
                         borderRadius={"5px"}
                         p={1}
                         me={2}
                         mb={1}
+                        ms={4}
                     />
-                    Experience
+                    Summary
                 </Text>
+                <Text
+                    bg={useColorModeValue("blue.100", "blue.700")}
+                    borderRadius="5px"
+                    fontSize="lg"
+                    p={3}
+                    my={2}
+                    mx={4}
+                >
+                    Full-stack developer with a background in computer engineering from the University
+                    of California, Riverside. Persistent problem-solver who embraces the challenge
+                    and process of bringing innovation to fruition. Currently refining my Test Development
+                    and React skills through Udemy courses.
+                </Text>
+
+                {/* SKILLS */}
                 <Text fontSize="3xl">
                     <Icon
-                        as={FaUserGraduate}
+                        as={FaClipboardList}
                         border="1px"
                         borderRadius={"5px"}
                         p={1}
                         me={2}
-                        mb={1}
+                        ms={4}
                     />
-                    Education
+                    Skills
                 </Text>
-
-                <Img
-                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UC_Riverside_logo.svg/1024px-UC_Riverside_logo.svg.png"}
-                    boxSize="45%"
-                    mb={3}
-                    alignSelf="center"
-                    alt={"University of California, Riverside Logo"}
-                // border="1px"
-                />
-                <Box
-                    bg={useColorModeValue("blue.100", "blue.700")}
-                    p={2}
-                    m={2}
-                    borderRadius="5px"
-                >
-                    <Text
-                        fontSize="xl"
-                        borderBottom="1px"
-                        pb={1}
-                    >
-                        Full Stack Development Certificate (2021)
-                    </Text>
-                    <UnorderedList>
-                        <ListItem>
-                            Frontend: HTML, CSS, JavaScript, Handlebars, Bootstrap, React.js
-                        </ListItem>
-                        <ListItem>
-                            Backend:
-                        </ListItem>
-                    </UnorderedList>
-
-                </Box>
-                <Box
-                    bg={useColorModeValue("blue.100", "blue.700")}
-                    p={2}
-                    m={2}
-                    borderRadius="5px"
-                >
-                    <Text
-                        fontSize="xl"
-                        borderBottom="1px"
-                        pb={1}
-                    >
-                        Bachelor of Science in Computer Engineering (2020)
-                    </Text>
-                    <Text>The best years of my life</Text>
-                </Box>
                 <UnorderedList
                     listStyleType="none"
+                    mx={4}
                 >
-                    <Text fontSize="3xl">
-                        <Icon
-                            as={FaClipboardList}
-                            border="1px"
-                            borderRadius={"5px"}
-                            p={1}
-                            me={2}
-                            mb={1}
-                        />
-                        Skills
-                    </Text>
-
                     <ListItem
                         bg={useColorModeValue("blue.100", "blue.700")}
                         borderRadius="5px"
@@ -263,10 +224,113 @@ function Resume(props) {
                         borderRadius="5px"
                         p={2}
                         mb={2}
-                    ><Text fontWeight="bold">Etc </Text>AGILE, Project Management, Test Driven Development, Responsive Design
+                    >
+                        <Text fontWeight="bold">Etc </Text>AGILE, Project Management, Test Driven Development, Responsive Design
                     </ListItem>
-
                 </UnorderedList>
+
+                {/* EXPERIENCE */}
+                <Text fontSize="3xl">
+                    <Icon
+                        as={FaBriefcase}
+                        border="1px"
+                        borderRadius={"5px"}
+                        p={1}
+                        ms={4}
+                        me={2}
+                        mb={1}
+                    />
+                    Experience
+                </Text>
+                <UnorderedList
+                    listStyleType="none"
+                    mx={4}
+                >
+                    <ListItem
+                        bg={useColorModeValue("blue.100", "blue.700")}
+                        borderRadius="5px"
+                        p={2}
+                        my={2}
+                    >
+                        <Flex>
+                            <Text fontWeight="bold">Team Co-lead - IEEE Micromouse</Text>
+                            <Spacer />
+                            <Text fontWeight="light"> September 2017 - June 2019  </Text>
+                        </Flex>
+                        <UnorderedList
+                            my={1}
+                        >
+                            <ListItem ms={3}>
+                                Led a team of four engineers to design, build, and program a robotic mouse to solve a maze.
+                            </ListItem>
+                            <ListItem ms={3}>
+                                Priortized individual growth and assigned tasks accordingly, documented progress,  budgeted funds, and trained new members.
+                            </ListItem>
+                            <ListItem ms={3}>
+                                Researched and tested electrical components, manufactured printed circuit boards (PCB), and implemented a PID controller through C++ on Arduino IDE.
+                            </ListItem>
+                        </UnorderedList>
+                    </ListItem>
+                </UnorderedList>
+
+                {/* EDUCATION */}
+                <Text fontSize="3xl">
+                    <Icon
+                        as={FaUserGraduate}
+                        border="1px"
+                        borderRadius={"5px"}
+                        p={1}
+                        ms={4}
+                        me={2}
+                        mb={1}
+                    />
+                    Education
+                </Text>
+
+                <Img
+                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UC_Riverside_logo.svg/1024px-UC_Riverside_logo.svg.png"}
+                    boxSize="45%"
+                    mb={3}
+                    alignSelf="center"
+                    alt={"University of California, Riverside Logo"}
+                // border="1px"
+                />
+                <Box
+                    bg={useColorModeValue("blue.100", "blue.700")}
+                    p={2}
+                    m={2}
+                    mx={4}
+                    borderRadius="5px"
+                >
+                    <Text
+                        fontSize="xl"
+                    >
+                        Full Stack Development Certificate (October 2021)
+                    </Text>
+                    {/* <UnorderedList>
+                        <ListItem>
+                            Frontend: HTML, CSS, JavaScript, Handlebars, Bootstrap, React.js
+                        </ListItem>
+                        <ListItem>
+                            Backend:
+                        </ListItem>
+                    </UnorderedList> */}
+
+                </Box>
+                <Box
+                    bg={useColorModeValue("blue.100", "blue.700")}
+                    p={2}
+                    mt={2}
+                    mx={4}
+                    borderRadius="5px"
+                >
+                    <Text
+                        fontSize="xl"
+                    >
+                        Bachelor of Science in Computer Engineering (December 2020)
+                    </Text>
+                    {/* <Text>The best years of my life</Text> */}
+                </Box>
             </Flex>
         </Flex>
 
@@ -274,45 +338,3 @@ function Resume(props) {
 }
 
 export default Resume;
-/*
-<Box h="full" p={3}>
-<Text fontSize="xl" fontWeight="semibold">Resume</Text>
-<Link href="https://docs.google.com/document/d/1NJH6z2xB7R2hKH3Lv2bGI11YP1hH4gKq3eATM1iFm5I/edit"
-    color="blue.500" rel="noreferrer" target="_blank">
-    Click to View Resume
-</Link>
-<Text fontSize="xl" fontWeight="semibold">Front-end Proficiencies</Text>
-<UnorderedList className="skill-list">
-    <ListItem>HTML</ListItem>
-    <ListItem>CSS</ListItem>
-    <ListItem>JavaScript</ListItem>
-    <ListItem>JQuery</ListItem>
-    <ListItem>Bootstrap</ListItem>
-    <ListItem>Handlebars</ListItem>
-    <ListItem>React.js</ListItem>
-</UnorderedList>
-<Text fontSize="xl" fontWeight="semibold">Back-end Proficiencies</Text>
-<UnorderedList className="skill-list" h="full">
-    <ListItem>Node.js</ListItem>
-    <ListItem>APIs</ListItem>
-    <ListItem>Express</ListItem>
-    <ListItem>MySQL / Sequelize</ListItem>
-    <ListItem>MongoDB / Mongoose</ListItem>
-    <ListItem>REST</ListItem>
-    <ListItem h="full">GraphQL</ListItem>
-</UnorderedList>
-</Box>*/
-/*
-<Image
-src="https://ucrmesa.weebly.com/uploads/1/3/2/0/132087666/bourns-college-of-engineering-rgb-horz_orig.png"
-boxSize="50%"
-mb={3}
-// border="1px"
-// borderColor={useColorModeValue("gray.100", "gray.600")}
-/>
-
-Utilizing HTML, CSS, JavaScript, Handlebars, and web APIs (Bootstrap) to build interactive and responsive client-side applications.
-Fetching information from Third-Party APIs to use in client-side applications.
-Building databases with MySQL, Sequelize, and Node.js, implementing user validation and authentication, and practicing Test-Driven Development.
-
-*/
