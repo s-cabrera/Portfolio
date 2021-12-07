@@ -36,7 +36,7 @@ Email: stephanie.cabrera.333@gmail.com
 [Portfolio](https://s-cabrera.github.io/Portfolio/)  
 
 If you want to see more of my projects, click the link below.  
------>  [Click Me](https://github.com/s-cabrera) <-----
+-------------------->  [Click Me](https://github.com/s-cabrera) <--------------------
 
 If you have any questions regarding my work or would like to collaborate, email me at stephanie.cabrera.333@gmail.com 
 
