@@ -18,8 +18,20 @@ export const projects = [
         img_src: fitness_tracker,
         github: "https://github.com/s-cabrera/Fitness_Tracker",
         app: "https://secret-beach-04921.herokuapp.com/",
-        description: "Fitness Tracker is a full-stack application that takes",
-        tech: ["Handlebars", "Heroku"] 
+        description: "Fitness Tracker is a full-stack application that allows a user to continue their current workout or create a new one. The application saves the user's workout information to a database and creates analytics from that data in the Dashboard. The application follows a Model-View-Controller folder structure. The Model consists of the MongoDB schemas. The View consists of Express-Handlebars, HTML, CSS, and Javascript for the frontend. The Controller consists of routes that fetch and retrieve data from the database and change the view accordingly. This application is deployed on Heroku as https://secret-beach-04921.herokuapp.com",
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Express", 
+            "Express-Handlebars",
+            "Express-Router",
+            "MongoDB Atlas",
+            "Mongoose",
+            "Path",
+            "Morgan",
+            "Heroku", 
+        ] 
     },
     {
         title: "Anime-Q",
@@ -27,8 +39,8 @@ export const projects = [
         img_src: anime_q,
         github: "https://github.com/s-cabrera/Anime-Q",
         app: "https://anime-q-list.herokuapp.com",
-        description: "Anime-Q is a full stack application that. Create your anime watchlist with Anime-Q",
-        tech: ["HTML","CSS", "JavaScript", "MySQL",] 
+        description: "Anime-Q is a full stack application in which a user can browse through a list of anime. The user can create an account or log in to an existing account. While logged in the user can add and remove anime to and from their personal watchlist.",
+        tech: ["CSS", "JavaScript", "MySQL","Heroku", "Express", "Express-Sessions", "Express-Handlebars", "CSV to JSON", "Sequelize", "Stack"] 
     },
     {
         title: "Password Generator",
@@ -36,7 +48,7 @@ export const projects = [
         img_src: password_generator,
         github: "https://github.com/s-cabrera/Password_Generator",
         app: "https://s-cabrera.github.io/Password_Generator/", 
-        description: "A client side application that prompts the user with a series of questions and generates a password based on the user's response",
+        description: "A client side application that prompts the user with a series of questions and generates a password based on the user's responses",
         tech: ["HTML", "CSS", "JavaScript"] 
     },
     {
@@ -45,8 +57,13 @@ export const projects = [
         img_src: coding_quiz,
         github: "https://github.com/s-cabrera/Code_Quiz",
         app: "https://s-cabrera.github.io/Code_Quiz/",
-        description: "Coding Quiz is a client side application that saves ",
-        tech: ["None"]  
+        description: "Coding Quiz is a client side application that prompts the user with a series of multiple-choice coding questions. It keeps score of the correct answers and penalizes incorrect answers. At the end of the quiz, a user can add their initials and score to the \"Highscores\" board. At the end the quiz, they have the option of going back to the \"Homepage\" to take the quiz again or clear the \"Highscores\" board. The application stores and retrieves the \"HighScores\" data from the localStorage ",
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "JQuery"
+        ]  
     },
     {
         title: "Weather Dashboard",
@@ -54,8 +71,16 @@ export const projects = [
         img_src: weather_dashboard,
         github: "https://github.com/s-cabrera/Weather_Dashboard",
         app: "https://s-cabrera.github.io/Weather_Dashboard/", 
-        description: "Weather Dashboard is a client side application that displays the forecast of the city the user enters in the search bar ",
-        tech: ["None"] 
+        description: "Weather Dashboard is a client side application that takes the user's input from the search bar and fetches information from the OpenWeather One Call API. It displays that city's current forecast and the forecast for the next 5 days. It uses localStorage to store the list of recent cities that the user searched.",
+        tech: [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "Moment.js",
+            "JQuery",
+            "OpenWeather One Call API"
+        ] 
     },
     {
         title: "Tech Blog",
@@ -63,7 +88,17 @@ export const projects = [
         img_src: tech_blog,
         github: "https://github.com/s-cabrera/Tech-Blog",
         app: "https://shielded-dawn-70616.herokuapp.com/", 
-        description: "A forum for techies to talk about the latests advancements in technology",
-        tech: ["None"] 
+        description: "Tech Blog is a full stack application that acts as a forum for techies to talk about the latests advancements in technology. This app follows the MVC paradigm in its architectural structure, uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. The user can sign up for a new account or log into an already existing account. While logged in, the user can create posts as well as comment on other users' posts." ,
+        tech: [
+            "CSS",
+            "JavaScript",
+            "Express-Handlebars", 
+            "MySQL2", 
+            "Sequelize", 
+            "dotenv", 
+            "bcrypt",
+            "express-session",
+            "connect-session-sequelize"
+        ] 
     }
 ]

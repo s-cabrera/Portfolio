@@ -26,7 +26,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 
-const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github, app }) => {
+const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github, app, tech }) => {
     const initialRef = React.useRef()
     const finalRef = React.useRef()
 
@@ -41,7 +41,7 @@ const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github,
                     bg={useColorModeValue("gray.300", "gray.700")}
                     borderTopRadius="5px"
                 >
-                    <Flex alignItems="center">
+                    <Flex align="center">
                         <Text>{title}</Text>
                         <Spacer />
                         <Badge
@@ -57,7 +57,7 @@ const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github,
                 </ModalHeader>
                 <Image src={img_src} alt={title} />
                 <ModalBody>
-                    <CollapseCard type={type} description={description} github={github} app={app} />
+                    <CollapseCard type={type} description={description} github={github} app={app} techies={tech} />
                 </ModalBody>
                 <Center 
                     borderTop="1px" 

@@ -14,7 +14,7 @@ import {
 
 
 
-const ProjectTitle = ({title, img_src, type, description, github, app}) => {
+const ProjectTitle = ({title, img_src, type, description, github, app, tech}) => {
     //Modal Hooks
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -39,6 +39,7 @@ const ProjectTitle = ({title, img_src, type, description, github, app}) => {
         description={description}
         github={github}
         app={app}
+        tech={tech}
     />
     </>
 )

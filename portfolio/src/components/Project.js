@@ -21,7 +21,7 @@ import {
 import { isMobile } from "react-device-detect";
 
 
-const Project = ({ title, img_src, github, app, type, description }) => {
+const Project = ({ title, img_src, github, app, type, description, tech }) => {
 
   //Title Transition Hook
   const { isOpen, onToggle } = useDisclosure()
@@ -36,11 +36,11 @@ const Project = ({ title, img_src, github, app, type, description }) => {
       p={2}
     >
       <Box 
-        className="project-container"   
+        className="project-container"
+        onLoad={() => {if(isMobile){onToggle()}}}   
         onMouseOver={() => {if(!isOpen && !isMobile){onToggle()}}}
         onMouseOut={() => {if(isOpen && !isMobile){onToggle()}}}       
         >
-        {/* {(isMobile)? <div>Mobile</div> : <div>Desktop</div> } */}
         <Image src={img_src} alt={title} w={'100%'}/>
         <SlideFade 
           in={isOpen} 
@@ -53,6 +53,7 @@ const Project = ({ title, img_src, github, app, type, description }) => {
             description={description} 
             github={github}
             app={app}
+            tech={tech}
           />
         </SlideFade>
     </Box>
