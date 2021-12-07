@@ -37,7 +37,7 @@ const Project = ({ title, img_src, github, app, type, description, tech }) => {
     >
       <Box 
         className="project-container"
-        onLoad={() => {if(isMobile){onToggle()}}}   
+        onLoad={() => {if(isMobile && !isOpen){onToggle()}}}   
         onMouseOver={() => {if(!isOpen && !isMobile){onToggle()}}}
         onMouseOut={() => {if(isOpen && !isMobile){onToggle()}}}       
         >

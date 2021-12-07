@@ -37,6 +37,7 @@ function Portfolio(props) {
                     github={project.github}
                     app={project.app}
                     description={project.description}
+                    tech={project.tech}
                 />)
                 } )
             }
