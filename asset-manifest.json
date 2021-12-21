@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.fd81967c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.824376de.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.824376de.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.509a972c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.509a972c.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e31ba015.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e31ba015.js.map",
     "static/js/2.06e3605c.chunk.js": "/Portfolio/static/js/2.06e3605c.chunk.js",
@@ -15,9 +15,9 @@
     "static/media/Anime-Q-Demo.72662c8c.gif": "/Portfolio/static/media/Anime-Q-Demo.72662c8c.gif",
     "static/media/Fitness_Tracker_Demo.5cbb71c6.gif": "/Portfolio/static/media/Fitness_Tracker_Demo.5cbb71c6.gif",
     "static/media/Tech_Blog_Demo.5b10176e.gif": "/Portfolio/static/media/Tech_Blog_Demo.5b10176e.gif",
-    "static/media/avatar.ed64a8ed.png": "/Portfolio/static/media/avatar.ed64a8ed.png",
     "static/media/coding_quiz_demo.9cee0a61.gif": "/Portfolio/static/media/coding_quiz_demo.9cee0a61.gif",
     "static/media/hiking_selfie_2.ceca89a3.jpeg": "/Portfolio/static/media/hiking_selfie_2.ceca89a3.jpeg",
+    "static/media/hiking_selfie_2_compressed.db0faf97.jpeg": "/Portfolio/static/media/hiking_selfie_2_compressed.db0faf97.jpeg",
     "static/media/password_generator_demo.6cc88054.gif": "/Portfolio/static/media/password_generator_demo.6cc88054.gif",
     "static/media/weather_dashboard_demo.e6552b7b.gif": "/Portfolio/static/media/weather_dashboard_demo.e6552b7b.gif"
   },
@@ -25,6 +25,6 @@
     "static/js/runtime-main.e31ba015.js",
     "static/js/2.06e3605c.chunk.js",
     "static/css/main.fd81967c.chunk.css",
-    "static/js/main.824376de.chunk.js"
+    "static/js/main.509a972c.chunk.js"
   ]
 }

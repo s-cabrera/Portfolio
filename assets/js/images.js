@@ -1,5 +1,5 @@
-const sharp = require('sharp');
-const fs = require('fs');
+const sharp = import('sharp');
+const fs = import('fs');
 const directory = '../src/images';
 
 fs.readdirSync(directory).forEach(file => {
