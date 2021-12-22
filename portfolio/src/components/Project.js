@@ -51,16 +51,16 @@ const Project = ({ title, img_src, github, app, type, description, tech }) => {
         onMouseOver={() => { if (!isOpen && !isMobile) { onToggle() } }}
         onMouseOut={() => { if (isOpen && !isMobile) { onToggle() } }}
       >
-        <Suspense fallback={renderLoader()}>
+        {/* <Suspense fallback={renderLoader()}> */}
          <LazyLoadImage
             src={img_src}
             alt={title}
             aria-label={title}
-            width='100%'
-            height="auto"
+            width={'100%'}
+            height={'100%'}
             effect="blur"
           />
-        </Suspense>
+        {/* </Suspense> */}
         <SlideFade
           in={isOpen}
           className="project-title-display"
