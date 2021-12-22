@@ -1,5 +1,5 @@
 import React from "react";
-import developer_photo from "../images/hiking_selfie_2.jpg";
+import developer_photo from "../images/hiking_selfie_2_compressed.jpeg";
 import {
     Stack,
     Flex,
@@ -19,10 +19,15 @@ function AboutMe(props) {
         >
             <Image
                 m={3}
-                boxSize={{
-                    base:"75%",
-                    md:"25%"
+                // boxSize={{
+                //     base:"75%",
+                //     md:"25%"
+                // }}
+                w={{
+                    base:'75%',
+                    md: '25%'
                 }}
+                height="fit-content"
                 objectFit="cover" 
                 src={developer_photo} 
                 alt="Developer_Photo"

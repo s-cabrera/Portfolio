@@ -4,12 +4,12 @@
 
 
 //Image Imports
-import anime_q from "../images/Anime-Q-Demo.gif"
-import password_generator from "../images/password_generator_demo.gif"
-import coding_quiz from "../images/coding_quiz_demo.gif"
-import weather_dashboard from "../images/weather_dashboard_demo.gif"
-import tech_blog from "../images/Tech_Blog_Demo.gif"
-import fitness_tracker from "../images/Fitness_Tracker_Demo.gif"
+import anime_q from "../images/gifs/Anime-Q.gif"
+import password_generator from "../images/gifs/password_generator_demo.gif"
+import coding_quiz from "../images/gifs/coding_quiz_demo.gif"
+import weather_dashboard from "../images/gifs/weather_dashboard_demo.gif"
+import tech_blog from "../images/gifs/Tech_Blog_Demo.gif"
+import fitness_tracker from "../images/gifs/Fitness_Tracker_Demo.gif"
 
 export const projects = [
     {

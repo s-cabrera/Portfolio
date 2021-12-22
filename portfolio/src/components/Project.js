@@ -1,5 +1,14 @@
 //React
-import React from "react";
+import 
+  React, 
+  { 
+    // lazy, 
+    Suspense 
+  } from 'react';
+
+//Lazy Loading
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 //Components
 import ProjectTitle from "./ProjectTitle";
@@ -10,7 +19,7 @@ import ProjectTitle from "./ProjectTitle";
 //Chakra UI
 import {
   Box,
-  Image,
+  // Image,
   useDisclosure,
   SlideFade,
   useColorModeValue
@@ -25,38 +34,48 @@ const Project = ({ title, img_src, github, app, type, description, tech }) => {
 
   //Title Transition Hook
   const { isOpen, onToggle } = useDisclosure()
+  const renderLoader = () => <p>Loading</p>;
 
   return (
-    <Box 
+    <Box
       bg={useColorModeValue("gray.200", "gray.700")}
-      borderWidth="1px" 
-      borderRadius="lg" 
+      borderWidth="1px"
+      borderRadius="lg"
       overflow="hidden"
       boxShadow="dark-lg"
       p={2}
     >
-      <Box 
+      <Box
         className="project-container"
-        onLoad={() => {if(isMobile && !isOpen){onToggle()}}}   
-        onMouseOver={() => {if(!isOpen && !isMobile){onToggle()}}}
-        onMouseOut={() => {if(isOpen && !isMobile){onToggle()}}}       
-        >
-        <Image src={img_src} alt={title} w={'100%'}/>
-        <SlideFade 
-          in={isOpen} 
+        onLoad={() => { if (isMobile && !isOpen) { onToggle() } }}
+        onMouseOver={() => { if (!isOpen && !isMobile) { onToggle() } }}
+        onMouseOut={() => { if (isOpen && !isMobile) { onToggle() } }}
+      >
+        <Suspense fallback={renderLoader()}>
+         <LazyLoadImage
+            src={img_src}
+            alt={title}
+            aria-label={title}
+            width='100%'
+            height="auto"
+            effect="blur"
+          />
+        </Suspense>
+        <SlideFade
+          in={isOpen}
           className="project-title-display"
         >
-          <ProjectTitle    
+          <ProjectTitle
             title={title}
             img_src={img_src}
-            type={type} 
-            description={description} 
+            type={type}
+            description={description}
             github={github}
             app={app}
             tech={tech}
           />
         </SlideFade>
-    </Box>
+      </Box>
     </Box>
   )
 }

@@ -1,7 +1,6 @@
 //Imports
 import React from "react";
-// import { Nav, Navbar } from 'react-bootstrap';
-import avatar from "../images/avatar.png";
+import avatar from "../images/avatar_compressed.png";
 
 import {
   Box,
@@ -19,6 +18,9 @@ const NavLink = (props) => (
     px={2}
     py={1}
     me={{base: 0, sm: 2}}
+    my={{base: 1, sm: 0}}
+    textAlign="center"
+    w={{base: '100%', sm:"fit-content"}}
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
@@ -39,48 +41,59 @@ export default function Header({handlePageChange}) {
         bg={useColorModeValue('gray.200', 'gray.700')} 
         height="max-content" 
         py={2}
-        px={{ base:0, sm:2}} 
+        px={{ base:0, sm:2}}
       >
         <Flex 
           direction={{ base:"column", sm:"row" }}
           alignItems={{ base:"center", sm:"center" }} 
           justifyContent={{base:"center", sm:"space-between"}} 
-          // border="1px solid red"
         >
           <Flex 
             direction={{
               base:"column", 
               sm:"row"
-            }} 
+            }}
             alignItems={{
               base:"center", 
               sm:"center"
             }}
-            // border="1px solid aqua"
+            w={{base: '50%', sm: 'fit-content'}}
           >
-            <Avatar src={avatar} me={{base:0, sm:2}}/>
+            <Avatar 
+              src={avatar}
+              size="md"
+              me={{base:0, sm:2}} 
+              alt="Developer Avatar icon" 
+              name="Stephanie Cabrera"
+              // loading="lazy"
+            />
             <NavLink 
                 href="#about-me" 
                 text="Home" 
+                aria-label="Home navbar link"
                 handlePageChange={handlePageChange} 
             />
-            {/* <NavLink 
-                href="#about-me" 
-                text="About Me" 
-                handlePageChange={handlePageChange} 
-            /> */}
             <NavLink 
                 href="#projects" 
-                text="Projects" 
+                text="Projects"
+                aria-label="projects navbar link"
                 handlePageChange={handlePageChange} 
             />
             <NavLink 
                 href="#resume" 
                 text="Resume" 
                 handlePageChange={handlePageChange} 
+                aria-label="resume navbar link"
             />
           </Flex>
-          <Button onClick={toggleColorMode} h="full" m={3}>
+          <Button 
+            onClick={toggleColorMode} 
+            h="full" 
+            m={3}
+            aria-label="Dark/Light Theme Toggle Button"
+            w={{base: '50%', sm:'fit-content'}}
+            py={2}
+          >
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           </Button>
                    

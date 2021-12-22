@@ -55,7 +55,7 @@ const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github,
                         <ModalCloseButton />
                     </Flex>
                 </ModalHeader>
-                <Image src={img_src} alt={title} />
+                <Image src={img_src} alt={title} aria-label={title}/>
                 <ModalBody>
                     <CollapseCard type={type} description={description} github={github} app={app} techies={tech} />
                 </ModalBody>
@@ -66,16 +66,24 @@ const ModalCard = ({ onClose, isOpen, title, img_src, type, description, github,
                 >
                     <ModalFooter>
                         <Box display="flex" justify="center" alignItems="center">
-                            <Link href={github} p={1}>
+                            <Link 
+                                href={github} 
+                                aria-label="Github Icon"
+                                p={1}
+                            >
                                 <Box display="flex" alignItems="center">
                                     <Text fontSize="lg" me={1}>Github</Text>
-                                    <FontAwesomeIcon icon={faGithub} />
+                                    <FontAwesomeIcon icon={faGithub} aria-label="Font Awesome Github Icon" />
                                 </Box>
                             </Link>
-                            <Link href={app} p={1}>
+                            <Link 
+                                href={app}
+                                aria-label="React Icon" 
+                                p={1}
+                            >
                                 <Box display="flex" alignItems="center">
                                     <Text fontSize="lg" me={1}>App</Text>
-                                    <FontAwesomeIcon icon={faReact} />
+                                    <FontAwesomeIcon icon={faReact} aria-label="Font Awesome React Icon"/>
                                 </Box>
                             </Link>
                         </Box>

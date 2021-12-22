@@ -33,7 +33,7 @@ import {
 } from 'react-icons/fa'
 
 //Images
-import developer_photo from "../images/hiking_selfie_2.jpg";
+import developer_photo from "../images/hiking_selfie_2.jpeg";
 
 function Resume(props) {
     return (
@@ -58,7 +58,6 @@ function Resume(props) {
                 <Text
                     fontSize={{
                         base: "4xl",
-                        // sm: "2x1",
                         md: "3xl",
                         lg: "4xl"
                     }}
@@ -74,6 +73,7 @@ function Resume(props) {
                 </Text>
                 <Img
                     bg={useColorModeValue("blue.50", "blue.900")}
+                    aria-label="Developer Image"
                     src={developer_photo}
                     w={{
                         base: '95%',
@@ -81,11 +81,9 @@ function Resume(props) {
                         md: '80%',
                         lg: '92%'
                     }}
+                    h={'fit-content'}
                     alt="Developer_Photo"
                     p={2}
-                // h={"fit"}
-                // m={2}
-                // border="1px solid aqua"
                 />
                 <List
                     bg={useColorModeValue("blue.50", "blue.900")}
@@ -124,20 +122,31 @@ function Resume(props) {
                     </ListItem>
                     <ListItem>
 
-                        <Link href="https://www.linkedin.com/in/stephanie-cabrera-809999139/">
+                        <Link 
+                            href="https://www.linkedin.com/in/stephanie-cabrera-809999139/"
+                            aria-label="LinkedIn link"
+                        >
                             <ListIcon as={FaLinkedin} />
                             stephanie-cabrera-809999139
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <Link href="https://github.com/s-cabrera">
+                        <Link 
+                            href="https://github.com/s-cabrera"
+                            aria-label="Github link"
+                        >
                             <ListIcon as={FaGithub} />
                             s-cabrera
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <Link href="https://docs.google.com/document/d/1NJH6z2xB7R2hKH3Lv2bGI11YP1hH4gKq3eATM1iFm5I/edit"
-                            color="blue.500" rel="noreferrer" target="_blank">
+                        <Link 
+                            href="https://docs.google.com/document/d/1NJH6z2xB7R2hKH3Lv2bGI11YP1hH4gKq3eATM1iFm5I/edit"
+                            color="blue.500" 
+                            rel="noreferrer" 
+                            target="_blank"
+                            aria-label="Resume link"    
+                        >
                             PDF version
                         </Link>
                     </ListItem>
@@ -164,6 +173,7 @@ function Resume(props) {
                         as={FaBook}
                         border="1px"
                         borderRadius={"5px"}
+                        aria-label="Education Icon (Font Awesome Book)"
                         p={1}
                         me={2}
                         mb={1}
@@ -191,6 +201,7 @@ function Resume(props) {
                         as={FaClipboardList}
                         border="1px"
                         borderRadius={"5px"}
+                        aria-label="Skills Icon (Font Awesome Clipboard)"
                         p={1}
                         me={2}
                         ms={4}

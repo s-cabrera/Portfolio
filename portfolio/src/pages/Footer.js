@@ -27,16 +27,31 @@ function Footer(props) {
             <Center>
                 <HStack py={3} spacing="3">
 
-                    <Link rel="noreferrer" target="_blank" href="https://github.com/s-cabrera/">
-                        <FontAwesomeIcon size="2x" icon={faGithub} />
+                    <Link 
+                        rel="noreferrer" 
+                        target="_blank" 
+                        href="https://github.com/s-cabrera/" 
+                        aria-label="Github link"
+                    >
+                        <FontAwesomeIcon size="2x" icon={faGithub} alt="Github Icon" />
                     </Link>
 
-                    <Link rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/stephanie-cabrera-809999139/">
-                        <FontAwesomeIcon size="2x" icon={faLinkedin} />
+                    <Link 
+                        rel="noreferrer" 
+                        target="_blank" 
+                        href="https://www.linkedin.com/in/stephanie-cabrera-809999139/"
+                        aria-label="LinkedIn link"
+                    >
+                        <FontAwesomeIcon size="2x" icon={faLinkedin} alt="LinkedIn Icon"/>
                     </Link>
 
-                    <Link rel="noreferrer" target="_blank" href="https://stackoverflow.com/users/15790246/stephanie-cabrera">
-                        <FontAwesomeIcon size="2x" icon={faStackOverflow} />
+                    <Link 
+                        rel="noreferrer" 
+                        target="_blank" 
+                        href="https://stackoverflow.com/users/15790246/stephanie-cabrera"
+                        aria-label="Stack Overflow Link"
+                    >
+                        <FontAwesomeIcon size="2x" icon={faStackOverflow} alt="StackOverflow Icon" />
                     </Link>
                 </HStack>
             </Center>
