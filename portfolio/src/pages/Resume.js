@@ -33,7 +33,7 @@ import {
 } from 'react-icons/fa'
 
 //Images
-import developer_photo from "../images/hiking_selfie_2.jpeg";
+import developer_photo from "../images/hiking_selfie_2_compressed.jpeg";
 
 function Resume(props) {
     return (

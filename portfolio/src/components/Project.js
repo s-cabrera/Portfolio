@@ -3,7 +3,7 @@ import
   React, 
   { 
     // lazy, 
-    Suspense 
+    // Suspense 
   } from 'react';
 
 //Lazy Loading
@@ -34,7 +34,7 @@ const Project = ({ title, img_src, github, app, type, description, tech }) => {
 
   //Title Transition Hook
   const { isOpen, onToggle } = useDisclosure()
-  const renderLoader = () => <p>Loading</p>;
+  // const renderLoader = () => <p>Loading</p>;
 
   return (
     <Box
