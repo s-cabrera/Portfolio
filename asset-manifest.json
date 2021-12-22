@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.fd81967c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.27c47105.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.27c47105.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.cfc8dded.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.cfc8dded.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f72462a7.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f72462a7.js.map",
     "static/css/2.6ef2fac9.chunk.css": "/Portfolio/static/css/2.6ef2fac9.chunk.css",
@@ -18,7 +18,6 @@
     "static/media/Fitness_Tracker_Demo.5cbb71c6.gif": "/Portfolio/static/media/Fitness_Tracker_Demo.5cbb71c6.gif",
     "static/media/Tech_Blog_Demo.5b10176e.gif": "/Portfolio/static/media/Tech_Blog_Demo.5b10176e.gif",
     "static/media/coding_quiz_demo.9cee0a61.gif": "/Portfolio/static/media/coding_quiz_demo.9cee0a61.gif",
-    "static/media/hiking_selfie_2.ceca89a3.jpeg": "/Portfolio/static/media/hiking_selfie_2.ceca89a3.jpeg",
     "static/media/hiking_selfie_2_compressed.db0faf97.jpeg": "/Portfolio/static/media/hiking_selfie_2_compressed.db0faf97.jpeg",
     "static/media/password_generator_demo.6cc88054.gif": "/Portfolio/static/media/password_generator_demo.6cc88054.gif",
     "static/media/weather_dashboard_demo.e6552b7b.gif": "/Portfolio/static/media/weather_dashboard_demo.e6552b7b.gif"
@@ -28,6 +27,6 @@
     "static/css/2.6ef2fac9.chunk.css",
     "static/js/2.62cfbceb.chunk.js",
     "static/css/main.fd81967c.chunk.css",
-    "static/js/main.27c47105.chunk.js"
+    "static/js/main.cfc8dded.chunk.js"
   ]
 }
