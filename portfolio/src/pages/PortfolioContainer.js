@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from "./Header";
 import AboutMe from "./AboutMe";
-import Portfolio from "./Portfolio";
+import ProjectContainer from "./ProjectContainer";
 import Resume from "./Resume";
 
 export default function PortfolioContainer() {
@@ -13,7 +13,7 @@ export default function PortfolioContainer() {
       return <AboutMe />;
     }
     if (currentPage === 'Projects') {
-      return <Portfolio />;
+      return <ProjectContainer />;
     }
     if (currentPage === 'Resume') {
         return <Resume />;

@@ -19,12 +19,11 @@ import ProjectTitle from "./ProjectTitle";
 //Chakra UI
 import {
   Box,
-  // Image,
+  Spinner,
   useDisclosure,
   SlideFade,
   useColorModeValue
 } from "@chakra-ui/react"
-
 
 //React-device-detect for project titles
 import { isMobile } from "react-device-detect";
@@ -59,6 +58,7 @@ const Project = ({ title, img_src, github, app, type, description, tech }) => {
             width={'100%'}
             height={'100%'}
             effect="blur"
+            placeholder={< Spinner size="md" />}
           />
         {/* </Suspense> */}
         <SlideFade

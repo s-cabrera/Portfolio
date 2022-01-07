@@ -11,7 +11,7 @@ import {
     Flex 
 } from "@chakra-ui/react"
 
-function Portfolio(props) {
+function ProjectContainer(props) {
     return (
         <Flex justifyContent={"center"} py={5}>
         <Grid 
@@ -46,4 +46,4 @@ function Portfolio(props) {
     );
 }
 
-export default Portfolio;
+export default ProjectContainer;
